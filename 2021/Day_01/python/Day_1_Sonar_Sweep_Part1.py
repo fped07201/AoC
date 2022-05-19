@@ -1,6 +1,6 @@
 counter=0
 
-with open("input.txt",'r') as fd:
+with open("../input.txt",'r') as fd:
     lines = fd.readlines()
     previous_data=int(lines[0])
 
