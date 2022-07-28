@@ -7,9 +7,6 @@ with open("../input.txt", 'r') as fd:
     n_cols = len(data[0])
     low_points = []
 
-    print(n_cols)
-    print(n_rows)
-
     for i in range(n_rows):
         for j in range(n_cols):
             if i == 0:
