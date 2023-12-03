@@ -1,0 +1,18 @@
+version: '3'
+services:
+  Day1_Part1:
+    image: node:latest
+    command: node Sonar_Sweep_Part1.js
+    volumes:
+      - ./Sonar_Sweep_Part1.js:/app/Sonar_Sweep_Part1.js
+      - ./package.json:/app/package.json
+      - ../input.txt:/app/input.txt
+    working_dir: /app
+  Day1_Part2:
+    image: node:latest
+    command: node Sonar_Sweep_Part2.js
+    volumes:
+      - ./Sonar_Sweep_Part2.js:/app/Sonar_Sweep_Part2.js
+      - ./package.json:/app/package.json
+      - ../input.txt:/app/input.txt
+    working_dir: /app
